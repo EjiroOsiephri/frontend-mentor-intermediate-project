@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script
+      src="https://kit.fontawesome.com/ebbf28ada9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <i class="fa-solid fa-bars" id="icon-open"></i>
+      <h1>Sneakers</h1>
+      <i class="fa-solid fa-cart-shopping" id="cart-id"></i>
+      <p class="par-cart">0</p>
+
+      <img id="avatar" src="images/image-avatar.png" alt="" srcset="" />
+    </div>
+    <div class="cart-dropdown none">
+      <h3 class="none">Cart</h3>
+      <hr />
+
+      <div class="mini-dropdown">
+        <img
+          src="images/image-product-3-thumbnail.jpg"
+          class="img-thumb"
+          alt=""
+        />
+        <h3 id="h3-cart">This cart is empty</h3>
+        <br />
+        <br />
+        <h4 id="h4-dropdown">$125 * 3</h4>
+        <span id="span">375</span>
+        <img src="images/icon-delete.svg" id="delete" alt="" />
+      </div>
+      <button id="checkout">Checkout</button>
+    </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img id="img-product" src="images/image-product-1.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/image-product-2.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/image-product-3.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/image-product-4.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev" id="icon-prev"></div>
+      <div class="swiper-button-next" id="icon-next"></div>
+    </div>
+
+    <div class="list">
+      <i class="fa-solid fa-xmark" id="icon-cancel"></i>
+      <ul>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#"> About </a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="containers">
+      <h3>Sneaker Company</h3>
+      <h1>
+        Fall Limited Edition <br />
+        Sneakers
+      </h1>
+      <h5>
+        These low-profile sneakers are your <br />
+        perfect casual wear companion. Featuring <br />
+        a durable rubber outer sole, <br />
+        they’ll withstand everything the weather can offer.
+      </h5>
+      <div class="flex-end">
+        <h4>
+          $125.00<span> 50%</span>
+          <h5>$250.00</h5>
+        </h4>
+      </div>
+      <div class="increment-container">
+        <img src="images/icon-plus.svg" id="plus" alt="" />
+        <p id="par-two">0</p>
+        <img src="images/icon-minus.svg" id="minus" alt="" />
+      </div>
+      <button class="btn">
+        <img src="images/icon-cart.svg" id="cart-btn" alt="" />Add to cart
+      </button>
+    </div>
+    <div class="img-end">
+      <img src="images/image-product-1-thumbnail.jpg" id="imgone" alt="" />
+      <img src="images/image-product-2-thumbnail.jpg" id="imgtwo" alt="" />
+      <img src="images/image-product-3-thumbnail.jpg" id="imgthree" alt="" />
+      <img src="images/image-product-4-thumbnail.jpg" id="imgfour" alt="" />
+    </div>
+
+    <!-- <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Ejiro Osiephri</a>.
+      </div>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
