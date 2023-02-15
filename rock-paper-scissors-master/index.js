@@ -272,4 +272,4 @@ if (computerChoice === "rock") {
 } else {
   result = "You win!";
 }
-
+// results
