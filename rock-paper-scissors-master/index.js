@@ -55,7 +55,31 @@ rock.addEventListener("click", () => {
     secondOne.style.marginLeft = "-15px";
   }
 });
+else if (computerChoiceNum === 3) {
+    const drawText = document.createElement("h1");
 
+    const rockButton = document.createElement("button");
+
+    rockButton.innerText = "PLAY AGAIN";
+
+    rockButton.className = "rockbtn";
+
+    const countIncrement = countValue.innerText++;
+
+    drawText.textContent = arrayMethod[0];
+
+    drawText.className = "drawtext";
+
+    computerContribution.append(drawText, rockButton);
+
+    rules.style.marginTop = "600px";
+
+    const rockbtn = document.querySelector(".rockbtn");
+
+    rockbtn.addEventListener("click", () => {
+      location.reload();
+    });
+  }
 //   let result;
 //   if (computerChoice === "rock") {
 //     result = "It's a tie!";
